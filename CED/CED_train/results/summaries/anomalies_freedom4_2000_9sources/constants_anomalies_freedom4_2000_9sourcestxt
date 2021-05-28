@@ -1,0 +1,31 @@
+RUN: anomalies_cae_3_18000
+DATA: anomalies_2ms_r_3_18000.bin
+DEVICE: 0
+MODEL: <class 'models.AE_r'>
+MODEL_LOAD_PATH: ./results/models/anomalies_cae_3_18000/model_00080000.torch
+DROPOUT_RATE: 0.0
+ACTIVATION: <function relu at 0x7f62f0f663b0>
+LOSS: <function l1_mean_loss_gain at 0x7f62f002c320>
+BATCH_SIZE: 100
+LRATE: 0.0001
+WEIGHT_DECAY: 0
+SEED: 123
+N_STEPS: 20000
+N_CPU_WORKERS: 1
+DATASET: <class 'datasets.SeismicBinaryDBDataset'>
+N_EXAMPLES: 18000
+VELOCITY_SHAPE: (1, 128, 128)
+GATHER_SHAPE: (1, 32, 512)
+SOURCE_SHAPE: (2, 1, 1)
+T_GAIN: 2.5
+VELOCITY_MU: 2700.0
+VELOCITY_SIGMA: 560.0
+GATHER_MU: 0.0
+GATHER_SIGMA: 1.0
+SUMMARY_FREQ: 100
+TEST_FREQ: 200
+MODEL_SAVE_FREQ: 10000
+SUMMARY_OUT_DIR: results/summaries/anomalies_cae_3_18000/
+MODEL_OUT_DIR: results/models/anomalies_cae_3_18000/
+HOSTNAME: 77c4c0230dd1
+DATA_PATH: ../generate_data_Anomalies/data/anomalies_2ms_r_3_18000.bin
