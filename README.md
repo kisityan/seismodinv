@@ -37,7 +37,7 @@ make all
 ```
 这一步会在`Seismic_CPML`文件夹下创建一个名为`xmodified_seismic_CPML_2D_pressure_second_order`的可执行文件。
 
-鉴于本仓库使用的数据量太大（约4.0G），故将部分数据存储在Google Driver(https:wwww.google.com)上，在执行程序之前Jupyter Notebook之前先下载相应数据。
+鉴于本仓库使用的数据量太大（约4.0G），故将部分数据存储在[Google Driver](https://drive.google.com/drive/folders/1vycWfGNE33g_ejZIjTacdqdbmMCCcPrC?usp=sharing)上，在执行程序之前Jupyter Notebook之前先下载相应数据。只需将下载的数据粘贴至同名文件夹下即可。
 
 ## WaveNet网络工作流程
 首先，介绍一下`WaveNet`文件夹下各个文件夹的用途：
